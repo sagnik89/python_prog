@@ -175,7 +175,7 @@ while should_continue:
     
     
 
-
+# Also i don't think this is the moist optimised code. Have to work on optimising it
 # have to fix the issue when both have the same score
 # Also fix the issue when both the person get higher score than 21
 
