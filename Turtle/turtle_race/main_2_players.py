@@ -76,18 +76,4 @@ else:
     turtle.write(f'User 2 has won the bet of {bet} rupees', font=("Verdana", 15, "normal"))
 
 
-    
-# if user_input == winning_color:
-#     output = f'You have won the bet. {winning_color} has won the race'
-#     turtle.write(output, font=("Verdana", 20, "normal"))
-# else:
-#     output = f'You have lost the bet. {winning_color} has won the race\n                      Pay 50 rupees '
-#     turtle.write(output, font=("Verdana", 20, "normal"))
-
-
-
-
-
-
-
 screen.exitonclick()
