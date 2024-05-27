@@ -10,8 +10,10 @@ turtle.goto(-200, 400)
 
 screen = t.Screen()
 screen.setup(1000, 1000)
-user_1_input = screen.textinput("USER 1: ", "Enter any color of the rainbow: ").lower().capitalize()
-user_2_input = screen.textinput("USER 2: ", "Enter any color of the rainbow: ").lower().capitalize()
+user_1_name = screen.textinput("USER 1: ", "Enter your name: ").lower().capitalize()
+user_2_name = screen.textinput("USER 2: ", "Enter your name: ").lower().capitalize()
+user_1_input = screen.textinput(f"{user_1_name}: ", "Enter any color of the rainbow: ").lower().capitalize()
+user_2_input = screen.textinput(f"{user_2_name}", "Enter any color of the rainbow: ").lower().capitalize()
 bet = screen.textinput("Enter the bet: ", "Amount")
 turtles = []
 
@@ -71,9 +73,10 @@ for i in range(len(turtle_ranks)):
     
 turtle.goto(-300, -300)
 if turtle_ranks.index(user_1_input) < turtle_ranks.index(user_2_input):
-    turtle.write(f'User 1 has won the bet of {bet} rupees', font=("Verdana", 15, "normal"))
+    turtle.write(f'{user_1_name} has won the bet of {bet} rupees', font=("Verdana", 15, "normal"))
 else:
-    turtle.write(f'User 2 has won the bet of {bet} rupees', font=("Verdana", 15, "normal"))
+    turtle.write(f'{user_2_name} has won the bet of {bet} rupees', font=("Verdana", 15, "normal"))
 
 
 screen.exitonclick()
+
