@@ -41,7 +41,7 @@ def start_timer():
         upper_label.config(text="Short Break", foreground=PINK)
 
         count_down(SHORT_BREAK_MIN * 60)
-    else:
+    else:       
         upper_label.config(text="Work", foreground=GREEN)
         count_down(WORK_MIN * 60)
         
@@ -74,6 +74,7 @@ def count_down(count):
 window.title("Pomodoro Timer")
 window.minsize(height=350, width=400)
 window.config(padx=100, pady=100, bg=YELLOW)
+
 
 
 # Creating a canvas 
