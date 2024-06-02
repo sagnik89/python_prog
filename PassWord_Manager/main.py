@@ -96,6 +96,8 @@ def add_to_file():
 
     with open("data.txt", "w") as file:
         file.write(data_string)        
+    
+    clear_all()
 
     
 my_password_var = StringVar()
